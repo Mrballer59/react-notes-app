@@ -1,4 +1,10 @@
+import NotesList from "./components/NotesList";
+
 const App = () => {
-  return <p>Hello Y'all It's B here </p>;
+  return (
+    <div className="container">
+      <NotesList />
+    </div>
+  );
 };
 export default App;
