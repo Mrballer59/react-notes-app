@@ -20,11 +20,13 @@ const App = () => {
       date: "15/04/2022",
     },
   ]);
+  const AddNote = (text) => {
+    console.log(text);
+  };
   return (
     <div className="container">
-      <NotesList notes={notes} />
+      <NotesList notes={notes} handleAddNote={AddNote} />
     </div>
   );
 };
 export default App;
-// start to code
