@@ -24,3 +24,4 @@ const AddNote = () => {
   );
 };
 export default AddNote;
+// got some bugs need to fix
