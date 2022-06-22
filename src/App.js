@@ -20,12 +20,19 @@ const App = () => {
       date: "15/04/2022",
     },
   ]);
-  const AddNote = (text) => {
-    console.log(text);
+  const addNote = (text) => {
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString(),
+    };
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
   };
   return (
     <div className="container">
-      <NotesList notes={notes} handleAddNote={AddNote} />
+      <NotesList notes={notes} handleAddNote={addNote} />
     </div>
   );
 };
