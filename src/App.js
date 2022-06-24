@@ -37,7 +37,7 @@ const App = () => {
   useEffect(() => {
     localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
   }, [notes]);
-
+  // storage this ends here
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
