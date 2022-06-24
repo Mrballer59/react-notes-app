@@ -25,7 +25,7 @@ const App = () => {
 
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
-
+  // localStorage not working need to fix this before deloyment
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
 
